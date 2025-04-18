@@ -1,0 +1,23 @@
+<section id="controls">
+    <div id="add-new">
+        <form id="add-joke-form" action="">
+            <h3>Add a New Joke</h3>
+            <input type="text" id="setup" placeholder="Setup" name="setup" required>
+            <input type="text" id="delivery" placeholder="Delivery" name="delivery" required>
+            <input type="text" id="category_id" placeholder="Category ID" name="category_id" required>
+            <p>Category ID: funnyJoke = 1 , lameJoke = 2</p>
+            <button id="add-btn" type="submit">Add Joke</button>
+        </form>
+    </div>
+    <div id="categories">
+        <a href="/jokebook/categories">View Categories</a>
+        <div id="search-container">
+            <form id="search-form" action="/jokebook/search/" method="get">
+                <input type="text" id="search-term" placeholder="Search Category ID" name="value">
+                <input type="hidden" id="search-type" name="type" value="category">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+    </div>
+
+</section>

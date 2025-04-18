@@ -1,0 +1,12 @@
+<%-include('./partials/head')%>
+<body>
+    <h1 id="category-h1">Jokebook Categories</h1>
+    <main id="category-main">
+        <% categoriesList.forEach((cat) => { %>
+            <div class="category">
+                <a href="/jokebook/joke/<%= cat.category_id %>"><%= cat.name %></h2>
+            </div>
+        <% }) %>
+    </main>
+</body>
+</html>
